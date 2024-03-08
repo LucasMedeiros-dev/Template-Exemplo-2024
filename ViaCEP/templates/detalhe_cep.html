@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalhe do CEP: {{cep.cep}}</title>
+</head>
+<body>
+    <h1>Detalhe do CEP: {{cep.cep}}</h1>
+    <p>Logradouro: {{cep.logradouro}}</p>
+    <p>Bairro: {{cep.bairro}}</p>
+    <p>Cidade: {{cep.localidade}}</p>
+    <p>Estado: {{cep.uf}}</p>
+    <p>Complemento: {{cep.complemento}}</p>
+    <a href={% url "cep_lista" %}>Voltar</a>
+</body>
+</html>

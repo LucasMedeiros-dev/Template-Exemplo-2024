@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exibir CEPs</title>
+</head>
+<body>
+    <h1>CEPs</h1>
+    <ul>
+        {% for cep in ceps %}
+            <li>ID:{{cep.id}} --- {{ cep }} --- <a href={{cep.id}}>Acessar</a></li>
+        {% endfor %}
+    </ul>
+    <a href={% url "cep_form" %}>Adicionar CEP</a>
+</body>
+</html>
